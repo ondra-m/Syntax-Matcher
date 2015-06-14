@@ -115,7 +115,7 @@ class DetectFileTypeCommand(sublime_plugin.EventListener):
 
     def is_ruby(self):
         if self.ext == '.rb':
-            self.set_syntax(view, 'Ruby')
+            self.set_syntax('Ruby')
             return True
 
         self.set_first_line()
